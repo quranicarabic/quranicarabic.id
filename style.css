@@ -1,0 +1,101 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Inter:wght@400;600&display=swap');
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif; /* Using Inter as primary, Poppins as alternative */
+    background-color: #FFFFFF; /* white */
+    color: #2D3436; /* dark grey */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: #FFFFFF; /* white */
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Circular profile picture */
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #DAD4B5; /* beige accent border */
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #990000; /* maroon */
+    margin-bottom: 5px;
+}
+
+p {
+    margin-bottom: 25px;
+    color: #636e72; /* Slightly lighter grey for bio */
+    font-size: 0.95em;
+}
+
+.links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.links li {
+    margin-bottom: 15px;
+}
+
+.links a {
+    display: block;
+    background-color: #DAD4B5; /* beige */
+    color: #000000; /* black */
+    padding: 15px 20px;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.links a:hover {
+    background-color: #990000; /* maroon on hover */
+    color: #FFFFFF; /* white text on hover */
+    transform: scale(1.03); /* Slight zoom effect */
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .links a {
+        padding: 12px 15px;
+        font-size: 0.9em;
+    }
+}

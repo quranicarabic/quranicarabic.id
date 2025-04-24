@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the existing stylesheet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Add some specific styles for the 404 page if needed, or rely on existing .container styles */
+        .container h1 {
+            margin-bottom: 15px; /* Adjust spacing */
+        }
+        .container p {
+            margin-bottom: 30px; /* Adjust spacing */
+        }
+        .back-link {
+            display: inline-block; /* Make it behave like a button but inline */
+            background-color: #DAD4B5; /* beige */
+            color: #000000; /* black */
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: transform 0.2s ease-in-out, background-color 0.2s ease;
+            font-family: 'Poppins', sans-serif;
+        }
+        .back-link:hover {
+            background-color: #990000; /* maroon on hover */
+            color: #FFFFFF; /* white text on hover */
+            transform: scale(1.03); /* Slight zoom effect */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>404</h1>
+        <p>Oops! The page you're looking for doesn't seem to exist.</p>
+        <a href="/" class="back-link">Go Back Home</a>
+    </div>
+</body>
+</html>
